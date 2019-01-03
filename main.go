@@ -51,10 +51,10 @@ func GetBulletins() ([]Bulletin, error) {
 			return nil, err
 		}
 
-		results = append(results, Bulletin{author, content, CreatedAt})
+		results = append(results, Bulletin{author, content, createdAt})
 	}
 
-	return nil, nil
+	return results, nil
 }
 
 func AddBulletin(bulletin Bulletin) error {
